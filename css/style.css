@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+
+/* 💙전체 레이아웃 */
+#header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 100;
+}
+#banner {}
+
+
+/* 💙가운데 영역 */
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 💙row 영역 */
+.row {
+    padding: 0 16px;
+}
+
+
+/* 💛header */
+.header {}
+.header h1 {
+    float: left;
+}
+.header h1 em img {
+    width: 155px;
+}
+.header h1 strong img {
+    width: 157px;
+}
+.header .nav {
+    float: right;
+}
+.header .nav ul {}
+.header .nav ul li {}
+.header .nav ul li a {}
+
+
+/* 💛banner */
+.banner_menu {}
+
+
+/* 💛banner slider */
+.slider {}
+.slider .swiper-wrapper {}
+.slider .swiper-slide {
+    padding-bottom: 560px; /* 높이값은 (부모의 넓이기준) 패딩으로 잡음??*/
+}
+.slider .ss1 {
+    background: url(../img/Witch_1920774.jpg) no-repeat center;
+    background-size: cover;
+}
+.slider .ss2 {
+    background: url(../img/MOON_1920774.jpg) no-repeat center;
+    background-size: cover;
+}
+.slider .ss3 {
+    background: url(../img/BIG_1920774.jpg) no-repeat center;
+    background-size: cover;
+}
