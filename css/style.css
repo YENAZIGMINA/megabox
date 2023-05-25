@@ -14,7 +14,7 @@
     background-color: #fff;
     z-index: 100;
 }
-#banner {}
+#banner {position: relative;}
 
 
 /* 💙가운데 영역 */
@@ -28,14 +28,54 @@
     padding: 0 16px;
 }
 
+/* 🔹모바일 메뉴(햄버거🍔) */
+#mNav {
+    display: none;
+    position: absolute;
+    top: 22px; right: 0;
+}
+#mNav .ham {
+    width: 25px; height: 4px;
+    display: block;
+}
+#mNav .ham span {
+    width: 100%; height: 100%;
+    background-color: #39106a;
+    position: relative;
+    display: block;
+}
+#mNav .ham span::before {
+    content: '';
+    position: absolute;
+    top: -7px; left: 0px;
+    width: 100%; height: 100%;
+    background-color: #39106a;
+}
+#mNav .ham span::after {
+    content: '';
+    position: absolute;
+    bottom: -7px; left: 0px;
+    width: 100%; height: 100%;
+    background-color: #39106a;
+}
+
+
 
 /* 💛header */
-.header {}
+.header {position: relative;}
 .header h1 {
     float: left;
 }
+.header h1 em {
+    display: inline-block;
+    padding: 8px 8px 3px 0;
+}
 .header h1 em img {
     width: 155px;
+}
+.header h1 strong {
+    position: absolute;
+    top: 14px; left: 170px;
 }
 .header h1 strong img {
     width: 157px;
@@ -43,13 +83,106 @@
 .header .nav {
     float: right;
 }
-.header .nav ul {}
-.header .nav ul li {}
-.header .nav ul li a {}
+.header .nav ul {
+    border-left: 1px solid #ccc;
+}
+.header .nav ul li {
+    float: left;
+    border-right: 1px solid #ccc;
+}
+.header .nav ul li a {
+    display: block;
+    padding: 14px 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
 
 
 /* 💛banner */
-.banner_menu {}
+.banner_menu {
+    position: absolute; /* ❗설정하면 자기공간 잃으니 다시 넓이값 줘야함 */
+    top: 60px; left: 0;
+    z-index: 10;
+    width: 100%;
+}
+.banner_menu a {
+    font-size: 16px;
+    color: #fff;
+}
+.banner_menu a:hover {color: #38116a;}
+.banner_menu .bm_left {float: left;}
+.banner_menu .bm_left ul {
+    padding-top: 10px;
+}
+.banner_menu .bm_left ul li {
+    display: inline;
+    margin: 20px;
+}
+.banner_menu .bm_left ul li.total a {
+    font-size: 14px;
+    border: 1px solid #ccc;
+    display: inline-block; /* 부모가 인라인일때 자식 inline-block 처리 */
+    padding: 3px 10px ;
+    text-shadow: 0 0 3px #444;
+}
+.banner_menu .bm_left ul li.total a:hover {
+    color: #000;
+    background-color: fff;
+    border-color: #000;
+    box-shadow: none;
+}
+.banner_menu li.line{
+    position: relative;
+}
+.banner_menu li.line::after {
+    content: '';
+    width: 1px; height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 3px; right: -19px;
+}
+
+.banner_menu .bm_right {
+    float: right;
+}
+.banner_menu .bm_right ul {
+    float: left;
+}
+.banner_menu .bm_right ul:first-child {
+    padding-top: 10px;
+    position: relative;
+}
+
+.banner_menu .bm_right ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.banner_menu .bm_right ul li {margin-right: 30px;}
+.banner_menu .bm_right ul li a {}
+.banner_menu .bm_right ul li.white {
+    margin-right: 10px;
+}
+.banner_menu .bm_right ul li.white a {
+    display: inline-block;
+    width: 142px; 
+    color: #3a0e6a;
+    background-color: #fff;
+    text-align: center;
+    padding: 7px 0;
+    border: 1px solid #6e40c4;
+}
+.banner_menu .bm_right ul li.purple {
+    margin-right: 0;
+}
+.banner_menu .bm_right ul li.purple a {
+    display: inline-block;
+    width: 142px; 
+    color: #fff;
+    background-color: #3a0e6a;
+    text-align: center;
+    padding: 7px 0;
+    border: 1px solid #6e40c4;
+}
 
 
 /* 💛banner slider */
@@ -70,3 +203,69 @@
     background: url(../img/BIG_1920774.jpg) no-repeat center;
     background-size: cover;
 }
+.slider .swiper-button-prev {
+    color: #fff; 
+    font-weight: bold;
+}
+.slider .swiper-button-next {
+    color: #fff; 
+    font-weight: bold;
+}
+.slider .swiper-pagination-bullet {
+    width: 13px; height: 13px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+
+
+/* 💛반응형 미디어쿼리💛 */
+@media (max-width:1290px){
+    .container {width: 100%;}
+    .header .nav ul li:last-child {border-right: 0;}
+}
+
+@media (max-width:1024px){
+    .header h1 em {padding: 11px 11px 3px 0;}
+    .header h1 em img {width: 135px;}
+}
+
+@media (max-width:960px){
+    .header .nav {display: none;}
+    .header h1 {float: none; text-align: center;}
+    .header h1 strong {left: 0px;}
+    #mNav {display: block;}
+    .banner_menu {top: 20px;}
+    .banner_menu .bm_left {display: none;}
+    .banner_menu .bm_right ul:first-child {display: none;}
+    .slider {margin-top: 45px;}
+}
+
+@media (max-width:768px){
+    body {background-color: #d9d7e0;}
+    .slider .swiper-slide {padding-bottom: 56.25%;} 
+    /* 유튜브 16:9비율에 맞춰서 나온 값이 56.25% */
+}
+
+@media (max-width:600px){
+    .header h1 strong {display: none;}
+    .header h1 {text-align: left;}
+    .banner_menu .bm_right ul li.white a {
+        display: inline-block;
+        width: 92px;
+        color: #fff;
+        background-color: rgba(0,0,0,0.6);
+        padding: 4px 0;
+        font-size: 14px;
+    }
+    .banner_menu .bm_right ul li.purple a {
+        display: inline-block;
+        width: 92px;
+        color: #fff;
+        background-color: rgba(0,0,0,0.6);
+        padding: 4px 0;
+        font-size: 14px;
+    }
+}
+@media (max-width:480px){}
+@media (max-width:320px){}

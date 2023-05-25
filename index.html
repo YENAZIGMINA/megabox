@@ -31,8 +31,15 @@
                             <strong><img src="img/logo-sub.png" alt="LIFE THEATER"></strong>
                         </a>
                     </h1>
+
+                    <!-- 모바일 메뉴(햄버거🍔) -->
+                    <nav id="mNav">
+                        <h2 class="ir">메가박스 전체메뉴</h2>
+                        <a href="#" class="ham"><span></span></a>
+                    </nav> <!-- #mNav end -->
+
                     <div class="nav">
-                        <ul>
+                        <ul class="clearfix">
                             <li><a href="#">영화</a></li>
                             <li><a href="#">큐레이션</a></li>
                             <li><a href="#">영화관</a></li>
@@ -46,27 +53,32 @@
             </div> <!-- .row end -->
         </div> <!-- .container end -->
     </header>
+
     <section id="banner">
         <div class="banner_menu">
             <h2 class="ir">메가박스 전체메뉴</h2>
-            <div class="bm_left">
-                <ul>
-                    <li class="total"><a href="#">전체메뉴</a></li>
-                    <li class="line"><a href="#">필름 소사이어티</a></li>
-                    <li><a href="#">클래식 소사이어티</a></li>
-                </ul>
-            </div> <!-- .bm_left end -->
-            <div class="bm_right">
-                <ul>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">멤버쉽</a></li>
-                    <li><a href="#">VIP</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">상영시간표</a></li>
-                    <li><a href="#">빠른예매</a></li>
-                </ul>
-            </div> <!-- .bm_right end -->
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="bm_left">
+                        <ul>
+                            <li class="total"><a href="#">전체메뉴</a></li>
+                            <li class="line"><a href="#">필름 소사이어티</a></li>
+                            <li><a href="#">클래식 소사이어티</a></li>
+                        </ul>
+                    </div> <!-- .bm_left end -->
+                    <div class="bm_right">
+                        <ul>
+                            <li class="line"><a href="#">고객센터</a></li>
+                            <li class="line"><a href="#">멤버쉽</a></li>
+                            <li><a href="#">VIP</a></li>
+                        </ul>
+                        <ul>
+                            <li class="white"><a href="#">상영시간표</a></li>
+                            <li class="purple"><a href="#">빠른예매</a></li>
+                        </ul>
+                    </div> <!-- .bm_right end -->
+                </div> <!-- .row end -->
+            </div><!-- .container end -->
         </div> <!-- .banner_menu end -->
 
         <div class="slider"><!-- ✔스와이퍼 사이트-Add Swiper HTML Layout 복붙 -->
@@ -96,11 +108,26 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div> <!-- .slider end -->
 
     </section> <!-- #banner end -->
+
+    <section id="movie">
+        <div class="container">
+            <div class="row">
+                <h2 class="ir">영화 예매</h2>
+                <div class="movie">
+                    <div class="movie_title">
+                        <ul>
+                            <li class="active"><a href="#">박스오피스</a></li>
+                            <li><a href="#">최신개봉작</a></li>
+                            <li><a href="#">상영예정작</a></li>
+                            <li><a href="#">큐레이션</a></li>
+                        </ul>
+                    </div> <!-- .movie_title end -->
+                </div> <!-- .movie end -->
+            </div> <!-- .row end -->
+        </div> <!-- .container end -->
+    </section> <!-- #movie end -->
 
 
 
