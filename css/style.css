@@ -15,6 +15,7 @@
     z-index: 100;
 }
 #banner {position: relative;}
+#movie {background-color: #f2f2f2;}
 
 
 /* 💙가운데 영역 */
@@ -215,6 +216,39 @@
     width: 13px; height: 13px;
     background-color: rgba(255,255,255,0.5);
 }
+
+/* movie */
+.movie {
+    padding: 100px 0;
+}
+.movie .movie_title {}
+.movie .movie_title ul {
+    width: 850px;
+    margin: 0 auto;
+}
+.movie .movie_title ul li {
+    width: 210px;
+    float: left;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: -1px;
+}
+.movie .movie_title ul li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+}
+.movie .movie_title ul li.active a {
+    background-color: #666;
+    color: #fff;
+}
+
+
+
+
 
 
 
