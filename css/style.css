@@ -29,6 +29,21 @@
     padding: 0 16px;
 }
 
+.icon {
+    background-image: url(../img/icon.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+       only screen and (min-device-pixel-ratio:1.5),
+       only screen and (min-resolution:1.5dppx){
+        .icon {
+            background-image: url(../img/icon@2.png);
+            background-size: 500px;
+        }
+       }
+
+
+
 /* 🔹모바일 메뉴(햄버거🍔) */
 #mNav {
     display: none;
@@ -220,8 +235,9 @@
 /* movie */
 .movie {
     padding: 100px 0;
+    overflow: hidden;
 }
-.movie .movie_title {}
+.movie .movie_title {margin-bottom: 60px;}
 .movie .movie_title ul {
     width: 850px;
     margin: 0 auto;
@@ -245,6 +261,44 @@
     background-color: #666;
     color: #fff;
 }
+
+
+/* movie_chart */
+.movie_chart .poster {position: relative;}
+.movie_chart .poster figure {}
+.movie_chart .poster figure img {}
+.movie_chart .poster .rank {
+    position: absolute;
+    top: 6px; left: 0;
+    width: 50px; height: 50px;
+    background-color: #38116a;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+}
+.movie_chart .poster .rank strong {
+    color: #fff;
+    font-size: 20px;
+}
+.movie_chart .poster .mx {
+    position: absolute;
+    right: 0; top: 20px;
+}
+.movie_chart .poster .mx span {
+    position: relative; /* ir효과를 풀기위해 포지션 작성 */
+    width: 102px; height: 21px;
+}
+.movie_chart .poster .mx .m {}
+.movie_chart .poster .mx .b {}
+.movie_chart 
+.movie_chart .infor {}
+.movie_chart .infor h3 {}
+.movie_chart .infor h3 .icon {}
+.movie_chart .infor h3 strong {}
+.movie_chart .infor .info_btn {}
+.movie_chart .infor .info_btn a {}
+
+
 
 
 

@@ -23,6 +23,7 @@ const swiper = new Swiper('.slider', {
   const swiper2 = new Swiper('.swiper-container2', {
     loop: true,
     slidesPerView: 4, //화면에 4개 보이기
+    spaceBetween: 10,
   
   });
 
@@ -39,4 +40,5 @@ const swiper = new Swiper('.slider', {
     movCont.hide().eq(index).show(); //모두 지우고, 인덱스 번호와 동등한 div 보임
     movBtn.removeClass("active"); //모든 li에 active 지우기
     target.addClass("active"); //클릭한 li에 active 추가
+
   });
