@@ -123,6 +123,8 @@
                             <li><a href="#">최신개봉작</a></li>
                             <li><a href="#">상영예정작</a></li>
                             <li><a href="#">큐레이션</a></li>
+                            <li class="bar"></li>
+                            <!-- li.bar ➰ 미디어쿼리 768px 일 때, 아래 bar를 만들어주기 위해 나중에 작성 -->
                         </ul>
                     </div> <!-- .movie_title end -->
                     <div class="movie_chart">
@@ -134,7 +136,8 @@
                                 <!-- Slides -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster01.jpg" srcset="img/poster01@2.jpg 2x" alt="범죄도시3"></figure>
+                                        <figure><img src="img/poster01.jpg" srcset="img/poster01@2.jpg 2x" alt="범죄도시3">
+                                        </figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>1</strong></div>
                                         <div class="mx">
@@ -155,7 +158,8 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster02.jpg" srcset="img/poster02@2.jpg 2x" alt="인어공주"></figure>
+                                        <figure><img src="img/poster02.jpg" srcset="img/poster02@2.jpg 2x" alt="인어공주">
+                                        </figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>2</strong></div>
                                         <div class="mx">
@@ -176,7 +180,8 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster03.jpg" srcset="img/poster03@2.jpg 2x" alt="남은 인생 10년"></figure>
+                                        <figure><img src="img/poster03.jpg" srcset="img/poster03@2.jpg 2x"
+                                                alt="남은 인생 10년"></figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>3</strong></div>
                                         <div class="mx">
@@ -197,9 +202,32 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster04.jpg" srcset="img/poster04@2.jpg 2x" alt="SUGA Agust D TOUR"></figure>
+                                        <figure><img src="img/poster04.jpg" srcset="img/poster04@2.jpg 2x" alt="분노의질주">
+                                        </figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>4</strong></div>
+                                        <div class="mx">
+                                            <span class="icon m ir">MX</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
+                                    </div> <!-- .poster end -->
+                                    <div class="infor">
+                                        <h3>
+                                            <span class="icon a15 ir">15세이상 관람가</span>
+                                            <strong>분노의질주</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
+                                    </div> <!-- .infor end -->
+                                </div> <!-- .swiper-slide end -->
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure><img src="img/poster05.jpg" srcset="img/poster05@2.jpg 2x"
+                                                alt="SUGA Agust D TOUR"></figure>
+                                        <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
+                                        <div class="rank"><strong>5</strong></div>
                                         <div class="mx">
                                             <span class="icon m ir">MX</span>
                                             <span class="icon b ir">Boutique</span>
@@ -218,28 +246,8 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster05.jpg" srcset="img/poster05@2.jpg 2x" alt="분노의 질주-라이드 오어 다이"></figure>
-                                        <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
-                                        <div class="rank"><strong>5</strong></div>
-                                        <div class="mx">
-                                            <span class="icon m ir">MX</span>
-                                            <span class="icon b ir">Boutique</span>
-                                        </div>
-                                    </div> <!-- .poster end -->
-                                    <div class="infor">
-                                        <h3>
-                                            <span class="icon a15 ir">15세이상관람가</span>
-                                            <strong>분노의 질주-라이드 오어 다이</strong>
-                                        </h3>
-                                        <div class="info_btn">
-                                            <a href="#">상세보기</a>
-                                            <a href="#">예매하기</a>
-                                        </div>
-                                    </div> <!-- .infor end -->
-                                </div> <!-- .swiper-slide end -->
-                                <div class="swiper-slide">
-                                    <div class="poster">
-                                        <figure><img src="img/poster06.jpg" srcset="img/poster06@2.jpg 2x" alt="가디언즈오브갤럭시"></figure>
+                                        <figure><img src="img/poster06.jpg" srcset="img/poster06@2.jpg 2x"
+                                                alt="가디언즈오브갤럭시"></figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>6</strong></div>
                                         <div class="mx">
@@ -264,10 +272,10 @@
                                             <img src="img/poster07.jpg" srcset="img/poster07@2.jpg 2x" alt="극장판 포켓몬스터">
                                         </figure>
                                         <div class="rank"><strong>7</strong></div>
-                                            <div class="mx">
-                                                <span class="icon m ir">mx</span>
-                                                <span class="icon b ir">Boutique</span>
-                                            </div>
+                                        <div class="mx">
+                                            <span class="icon m ir">mx</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
                                     </div> <!-- //poster  -->
                                     <div class="infor">
                                         <h3>
@@ -283,9 +291,7 @@
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster08.jpg" 
-                                                srcset="img/poster08@2.jpg 2x"
-                                            alt="스즈메의 문단속">
+                                            <img src="img/poster08.jpg" srcset="img/poster08@2.jpg 2x" alt="스즈메의 문단속">
                                         </figure>
                                         <div class="rank"><strong>8</strong></div>
                                         <div class="mx">
@@ -295,17 +301,17 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon all ir">전체이용관람가</span>
-                                        <strong>스즈메의 문단속</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>스즈메의 문단속</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
-                                </div>  <!-- .swiper-slide end -->
+                                </div> <!-- .swiper-slide end -->
                             </div>
                         </div><!-- 첫번째 슬라이드 -->
-                
+
                         <div class="swiper-container swiper-container2">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
@@ -313,9 +319,7 @@
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster09.jpg" 
-                                                srcset="img/poster09@2.jpg 2x"
-                                            alt="메이플스토리">
+                                            <img src="img/poster09.jpg" srcset="img/poster09@2.jpg 2x" alt="메이플스토리">
                                         </figure>
                                         <div class="rank"><strong>9</strong></div>
                                         <div class="mx">
@@ -325,20 +329,18 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon all ir">전체이용관람가</span>
-                                        <strong>메이플스토리</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>메이플스토리</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster10.jpg" 
-                                                srcset="img/poster10@2.jpg 2x"
-                                            alt="라이드 온">
+                                            <img src="img/poster10.jpg" srcset="img/poster10@2.jpg 2x" alt="라이드 온">
                                         </figure>
                                         <div class="rank"><strong>10</strong></div>
                                         <div class="mx">
@@ -348,20 +350,18 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon a12 ir">12세이상관람가</span>
-                                        <strong>라이드 온</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>라이드 온</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster11.jpg" 
-                                                srcset="img/poster11@2.jpg 2x"
-                                            alt="탑건">
+                                            <img src="img/poster11.jpg" srcset="img/poster11@2.jpg 2x" alt="탑건">
                                         </figure>
                                         <div class="rank"><strong>11</strong></div>
                                         <div class="mx">
@@ -371,20 +371,19 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon a12 ir">12세이상관람가</span>
-                                        <strong>탑건</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>탑건</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster12.jpg" 
-                                                srcset="img/poster12@2.jpg 2x"
-                                            alt="메리 드림 데드 바디">
+                                            <img src="img/poster12.jpg" srcset="img/poster12@2.jpg 2x"
+                                                alt="메리 드림 데드 바디">
                                         </figure>
                                         <div class="rank"><strong>12</strong></div>
                                         <div class="mx">
@@ -394,12 +393,12 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon a12 ir">12세이상관람가</span>
-                                        <strong>메리 드림 데드 바디</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>메리 드림 데드 바디</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
@@ -422,7 +421,7 @@
                                             <a href="#">상세보기</a>
                                             <a href="#">예매하기</a>
                                         </div>
-                                      </div> <!-- //infor -->
+                                    </div> <!-- //infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
@@ -469,9 +468,7 @@
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster16.jpg" 
-                                                srcset="img/poster16@2.jpg 2x"
-                                            alt="말없는 소녀">
+                                            <img src="img/poster16.jpg" srcset="img/poster16@2.jpg 2x" alt="말없는 소녀">
                                         </figure>
                                         <div class="rank"><strong>16</strong></div>
                                         <div class="mx">
@@ -481,17 +478,17 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon all ir">전체관람가</span>
-                                        <strong>말없는 소녀</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>말없는 소녀</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                             </div>
                         </div><!-- 두번째 슬라이드 -->
-                
+
                         <div class="swiper-container swiper-container2">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
@@ -499,9 +496,7 @@
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster17.jpg" 
-                                                srcset="img/poster17@2.jpg 2x"
-                                            alt="어 퓨 굿 맨">
+                                            <img src="img/poster17.jpg" srcset="img/poster17@2.jpg 2x" alt="어 퓨 굿 맨">
                                         </figure>
                                         <div class="rank"><strong>17</strong></div>
                                         <div class="mx">
@@ -511,20 +506,18 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon a15 ir">15세이상관람가</span>
-                                        <strong>어 퓨 굿 맨</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>어 퓨 굿 맨</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster18.jpg" 
-                                                srcset="img/poster18@2.jpg 2x"
-                                            alt="스프린터">
+                                            <img src="img/poster18.jpg" srcset="img/poster18@2.jpg 2x" alt="스프린터">
                                         </figure>
                                         <div class="rank"><strong>18</strong></div>
                                         <div class="mx">
@@ -534,20 +527,18 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon a12 ir">12세이상관람가</span>
-                                        <strong>스프린터</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>스프린터</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster19.jpg" 
-                                                srcset="img/poster19@2.jpg 2x"
-                                            alt="바닐라스카이">
+                                            <img src="img/poster19.jpg" srcset="img/poster19@2.jpg 2x" alt="바닐라스카이">
                                         </figure>
                                         <div class="rank"><strong>19</strong></div>
                                         <div class="mx">
@@ -556,21 +547,19 @@
                                         </div>
                                     </div><!-- //poster -->
                                     <div class="infor">
-                                        <h3><span class="icon a18 ir">18세이상관람가</span>
-                                        <strong>바닐라스카이</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                        <h3><span class="icon a19 ir">18세이상관람가</span>
+                                            <strong>바닐라스카이</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster20.jpg" 
-                                                srcset="img/poster20@2.jpg 2x"
-                                            alt="아기공룡둘리">
+                                            <img src="img/poster20.jpg" srcset="img/poster20@2.jpg 2x" alt="아기공룡둘리">
                                         </figure>
                                         <div class="rank"><strong>20</strong></div>
                                         <div class="mx">
@@ -580,20 +569,18 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon all ir">전체관람가</span>
-                                        <strong>아기공룡둘리</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>아기공룡둘리</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster16.jpg" 
-                                                srcset="img/poster16@2.jpg 2x"
-                                            alt="말없는 소녀">
+                                            <img src="img/poster16.jpg" srcset="img/poster16@2.jpg 2x" alt="말없는 소녀">
                                         </figure>
                                         <div class="rank"><strong>24</strong></div>
                                         <div class="mx">
@@ -603,12 +590,12 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon all ir">전체관람가</span>
-                                        <strong>말없는 소녀</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>말없는 소녀</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
@@ -673,11 +660,11 @@
                                             <a href="#">상세보기</a>
                                             <a href="#">예매하기</a>
                                         </div>
-                                      </div> <!-- //infor -->
+                                    </div> <!-- //infor -->
                                 </div> <!-- .swiper-slide end -->
                             </div>
                         </div><!-- 세번째 슬라이드 -->
-                
+
                         <div class="swiper-container swiper-container2">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
@@ -685,9 +672,7 @@
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
-                                            <img src="img/poster08.jpg" 
-                                                srcset="img/poster08@2.jpg 2x"
-                                            alt="스즈메의 문단속">
+                                            <img src="img/poster08.jpg" srcset="img/poster08@2.jpg 2x" alt="스즈메의 문단속">
                                         </figure>
                                         <div class="rank"><strong>22</strong></div>
                                         <div class="mx">
@@ -697,24 +682,24 @@
                                     </div><!-- //poster -->
                                     <div class="infor">
                                         <h3><span class="icon all ir">전체이용관람가</span>
-                                        <strong>스즈메의 문단속</strong>
-                                    </h3>
-                                    <div class="info_btn">
-                                        <a href="#">상세보기</a>
-                                        <a href="#">예매하기</a>
-                                    </div>
+                                            <strong>스즈메의 문단속</strong>
+                                        </h3>
+                                        <div class="info_btn">
+                                            <a href="#">상세보기</a>
+                                            <a href="#">예매하기</a>
+                                        </div>
                                     </div><!-- .infor -->
-                                </div>  <!-- .swiper-slide end -->
+                                </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
                                         <figure>
                                             <img src="img/poster07.jpg" srcset="img/poster07@2.jpg 2x" alt="극장판 포켓몬스터">
                                         </figure>
                                         <div class="rank"><strong>23</strong></div>
-                                            <div class="mx">
-                                                <span class="icon m ir">mx</span>
-                                                <span class="icon b ir">Boutique</span>
-                                            </div>
+                                        <div class="mx">
+                                            <span class="icon m ir">mx</span>
+                                            <span class="icon b ir">Boutique</span>
+                                        </div>
                                     </div> <!-- //poster  -->
                                     <div class="infor">
                                         <h3>
@@ -729,7 +714,8 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster06.jpg" srcset="img/poster06@2.jpg 2x" alt="가디언즈오브갤럭시"></figure>
+                                        <figure><img src="img/poster06.jpg" srcset="img/poster06@2.jpg 2x"
+                                                alt="가디언즈오브갤럭시"></figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>24</strong></div>
                                         <div class="mx">
@@ -750,7 +736,8 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster05.jpg" srcset="img/poster05@2.jpg 2x" alt="분노의 질주-라이드 오어 다이"></figure>
+                                        <figure><img src="img/poster05.jpg" srcset="img/poster05@2.jpg 2x"
+                                                alt="분노의 질주-라이드 오어 다이"></figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>25</strong></div>
                                         <div class="mx">
@@ -771,7 +758,8 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster04.jpg" srcset="img/poster04@2.jpg 2x" alt="SUGA Agust D TOUR"></figure>
+                                        <figure><img src="img/poster04.jpg" srcset="img/poster04@2.jpg 2x"
+                                                alt="SUGA Agust D TOUR"></figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>26</strong></div>
                                         <div class="mx">
@@ -792,7 +780,8 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster03.jpg" srcset="img/poster03@2.jpg 2x" alt="남은 인생 10년"></figure>
+                                        <figure><img src="img/poster03.jpg" srcset="img/poster03@2.jpg 2x"
+                                                alt="남은 인생 10년"></figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>27</strong></div>
                                         <div class="mx">
@@ -813,7 +802,8 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster02.jpg" srcset="img/poster02@2.jpg 2x" alt="인어공주"></figure>
+                                        <figure><img src="img/poster02.jpg" srcset="img/poster02@2.jpg 2x" alt="인어공주">
+                                        </figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>28</strong></div>
                                         <div class="mx">
@@ -834,7 +824,8 @@
                                 </div> <!-- .swiper-slide end -->
                                 <div class="swiper-slide">
                                     <div class="poster">
-                                        <figure><img src="img/poster01.jpg" srcset="img/poster01@2.jpg 2x" alt="범죄도시3"></figure>
+                                        <figure><img src="img/poster01.jpg" srcset="img/poster01@2.jpg 2x" alt="범죄도시3">
+                                        </figure>
                                         <!-- 해상도 맞춰서 작성하는 법 (sunset) -->
                                         <div class="rank"><strong>29</strong></div>
                                         <div class="mx">
@@ -861,7 +852,95 @@
         </div> <!-- .container end -->
     </section> <!-- #movie end -->
 
-    
+    <section id="event">
+        <div class="container">
+            <div class="row">
+                <div class="event clearfix">
+                    <h2>새로운 이벤트</h2>
+                    <div class="event_left clearfix">
+                        <div class="event_slide">
+                            <img src="img/event01.jpg" srcset="img/event01@2.jpg 2x" alt="시티패키지">
+                            <!-- 해상도 다른이미지 넣을때 '2x'넣기 -->
+                        </div> <!-- /event_slide -->
+                        <div class="event_box1">
+                            <img src="img/event02.jpg" srcset="img/event02@2.jpg 2x" alt="남포항점 시즌할인">
+                        </div> <!-- /event_box1 -->
+                        <div class="event_box2">
+                            <img src="img/event03.jpg" srcset="img/event03@2.jpg 2x" alt="설선물 이수점 전용 관람권 런칭">
+                        </div> <!-- /event_box2 -->
+                    </div> <!-- /event_left -->
+
+                    <div class="event_right">
+                        <img src="img/event04.jpg" srcset="img/event04.jpg 2x" alt="사표대신 영화표">
+                    </div> <!-- /event_right -->
+                </div> <!-- /envent -->
+            </div> <!-- /row -->
+        </div> <!-- /container -->
+    </section> <!-- #event end -->
+
+    <section id="openning">
+        <div class="container">
+            <div class="row">
+                <div class="openning">
+                    <h2><span class="ir icon grand">Grand Openning</span></h2>
+                    <strong class="ir icon date">2023.08~2023.09</strong>
+                    <p class="desc">LIFE THEATHER로 새롭게 시작하는 메가박스로 만나보세요!</p>
+
+                    <div class="open_box clearfix">
+                        <div>
+                            <h3>리뉴얼 오픈</h3>
+                            <p><em>경기도</em><strong>안양</strong>08월 17일</p>
+                        </div>
+                        <div>
+                            <h3>리뉴얼 오픈</h3>
+                            <p><em>경기도</em><strong>인덕원 사거리</strong>09월 01일</p>
+                        </div>
+                        <div>
+                            <h3>리뉴얼 오픈</h3>
+                            <p><em>경기도</em><strong>용인테크노밸리</strong>09월 15일</p>
+                        </div>
+                    </div> <!-- /open_box -->
+                </div> <!-- /openning -->
+            </div> <!-- /row -->
+        </div> <!-- /container -->
+    </section> <!-- #openning end -->
+
+    <section id="new">
+        <div class="container">
+            <div class="row">
+                <div class="new">
+                    <h2>새로운 영화</h2>
+                    <div class="new_left">
+                        <div class="play">
+                            <!-- 일러스트에서 재생버튼 svg확장자로 저장후 페이지 소스 복붙 -->
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1417.32 1417.32"
+                                style="enable-background:new 0 0 1417.32 1417.32;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0 {
+                                        opacity: 0.3;
+                                        fill: #FFFFFF;
+                                    }
+
+                                    .st1 {
+                                        fill: #FFFFFF;
+                                    }
+                                </style>
+                                <g>
+                                    <circle class="st0" cx="709.76" cy="708.66" r="695.02" />
+                                    <path class="st1" d="M918.81,633.11c58.16,33.58,58.16,117.52,0,151.09l-165.43,95.51l-165.43,95.51
+		c-58.16,33.58-130.85-8.39-130.85-75.55V708.66V517.63c0-67.15,72.7-109.12,130.85-75.55l165.43,95.51L918.81,633.11z" />
+                                </g>
+                            </svg>
+                        </div> <!-- /play -->
+                    </div> <!-- /new_left -->
+                    <div class="new_right"></div> <!-- /new_right -->
+                </div> <!-- /new -->
+            </div> <!-- /row -->
+        </div> <!-- /container -->
+    </section> <!-- #new end -->
+
+
 
 
 

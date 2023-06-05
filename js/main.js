@@ -24,6 +24,29 @@ const swiper = new Swiper('.slider', {
     loop: true,
     slidesPerView: 4, //화면에 4개 보이기
     spaceBetween: 10,
+    //✔ breakpoints --> 1.뷰포터의 넓이 / 2.빨간점 찍어서 에러찾을 때 사용(점찍은 만큼 실행하도록 하게함)
+    breakpoints: {
+      // 뷰포터의 넓이 >= 0px
+      0: {
+        slidesPerView: 1.4,
+        spaceBetween: 24
+      },
+      // 뷰포터의 넓이 >= 600px
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 24
+      },
+      // 뷰포터의 넓이 >= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 24
+      },
+      // 뷰포터의 넓이 >= 960px
+      960: {
+        slidesPerView: 4,
+        spaceBetween: 24
+      }
+    }
   
   });
 

@@ -14,8 +14,18 @@
     background-color: #fff;
     z-index: 100;
 }
-#banner {position: relative;}
+#banner {
+    overflow: hidden; /* ❗슬라이드 넘길 때 발생하는 아래 스크롤 없애기  */
+    position: relative;
+    margin-top: 51px;
+}
 #movie {background-color: #f2f2f2;}
+#event {}
+#openning {
+    margin: 24px 0;
+    background: url(../img/bg01.jpg) no-repeat center top;
+    background-size: cover;
+}
 
 
 /* 💙가운데 영역 */
@@ -29,6 +39,7 @@
     padding: 0 16px;
 }
 
+/* 아이콘 */
 .icon {
     background-image: url(../img/icon.png);
 }
@@ -117,7 +128,7 @@
 /* 💛banner */
 .banner_menu {
     position: absolute; /* ❗설정하면 자기공간 잃으니 다시 넓이값 줘야함 */
-    top: 60px; left: 0;
+    top: 20px; left: 0;
     z-index: 10;
     width: 100%;
 }
@@ -203,7 +214,7 @@
 
 /* 💛banner slider */
 .slider {}
-.slider .swiper-wrapper {}
+.slider .swiper-wrapper {/* width: 100%; */}
 .slider .swiper-slide {
     padding-bottom: 560px; /* 높이값은 (부모의 넓이기준) 패딩으로 잡음??*/
 }
@@ -261,12 +272,13 @@
     background-color: #666;
     color: #fff;
 }
+.movie .movie_title ul li.bar {display: none;}
 
 
 /* movie_chart */
 .movie_chart .poster {position: relative;}
 .movie_chart .poster figure {}
-.movie_chart .poster figure img {}
+.movie_chart .poster figure img {display: block;}
 .movie_chart .poster .rank {
     position: absolute;
     top: 6px; left: 0;
@@ -286,17 +298,163 @@
 }
 .movie_chart .poster .mx span {
     position: relative; /* ir효과를 풀기위해 포지션 작성 */
-    width: 102px; height: 21px;
+    width: 100px; height: 21px;
+    display: block;
 }
-.movie_chart .poster .mx .m {}
-.movie_chart .poster .mx .b {}
-.movie_chart 
-.movie_chart .infor {}
-.movie_chart .infor h3 {}
-.movie_chart .infor h3 .icon {}
-.movie_chart .infor h3 strong {}
-.movie_chart .infor .info_btn {}
-.movie_chart .infor .info_btn a {}
+.movie_chart .poster .mx .m {
+    margin-bottom: 4px;
+    background-position: -1px -76px;
+}
+.movie_chart .poster .mx .b {
+    background-position: -1px -101px;
+}
+.movie_chart {}
+.movie_chart .infor {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    padding: 17px;
+}
+.movie_chart .infor h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+.movie_chart .infor h3 span {
+    /* ir태그에 포지션속성이 있어서 span태그에 넓이 적용됨 */
+    width: 27px; height: 27px;
+}
+.movie_chart .infor h3 span.all {
+    background-position: -88px -126px;
+}
+.movie_chart .infor h3 span.a12 {
+    background-position: -1px -126px;
+}
+.movie_chart .infor h3 span.a15 {
+    background-position: -30px -126px;
+}
+.movie_chart .infor h3 span.a19 {
+    background-position: -59px -126px;
+}
+.movie_chart .infor h3 strong {
+    margin-left: 37px;
+}
+.movie_chart .infor .info_btn {overflow: hidden;}
+.movie_chart .infor .info_btn a {
+    float: left; width: 49%;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+.movie_chart .infor .info_btn a + a {
+    /* +는 바로 뒤 동생 */
+    margin-left: 2%;
+}
+
+
+/* #event */
+.event {padding: 100px 0;}
+.event h2 {
+    font-size: 30px; font-weight: 500;
+    margin-bottom: 20px;
+}
+.event img {display: block;}
+
+.event .event_left {
+    float: left; width: 66%;
+    margin-right: 2%;
+}
+.event .event_right {
+    float: left; width: 32%;
+}
+
+.event .event_left {}
+.event .event_left .event_slide {}
+.event .event_left .event_box1 {
+    float: left; width: 50%;
+}
+.event .event_left .event_box2 {
+    float: left; width: 50%;
+}
+
+/* #openning */
+.openning {
+    padding: 100px 0;
+    text-align: center; /* ✔중앙정렬 */
+}
+.openning .grand {
+    position: relative;
+    /* ir효과에 있는 absolute때문에 중앙으로 위치 안먹힘(text-align: center, display: inline-block) --> ❗해결책으로 position: relative */
+    display: inline-block; /* ✔중앙정렬 */
+    width: 330px; height: 43px;
+    background-position: 0 -175px;
+    margin-bottom: 20px;
+}
+.openning .date {
+    position: relative;
+    display: inline-block;
+    width: 257px; height: 31px;
+    background-position: 0 -235px;
+    margin-bottom: 5px;
+}
+.openning .desc {
+    color: #bb9651;
+    font-size: 30px;
+    background: url(../img/bar.png) no-repeat center bottom;
+    background-size: 100%;
+    padding-bottom: 20px;
+}
+
+.openning .open_box {}
+.openning .open_box div {
+    float: left; width: 27.3333%;
+    margin: 4% 3% 0;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid #3e4b44;
+    box-sizing: border-box;
+}
+.openning .open_box div h3 {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    background-color: #551e96;
+    padding: 10px 20px;
+    margin-top: -25px; /* 트랜스폼, 앱솔루트로 위치조절 해도됨 */
+}
+.openning .open_box div p {
+    color: #fff;
+    font-size: 27px; font-weight: 300;
+    padding: 15px 25px;
+}
+.openning .open_box div p em {
+    display: block;
+}
+.openning .open_box div p strong {
+    display: block;
+}
+
+/* new */
+.new {
+    padding: 100px 0;
+}
+.new h2 {}
+.new .new_left {
+    height: 500px;
+    background: url(../img/new01.jpg) no-repeat center;
+    background-size: cover;
+}
+.new .new_left .play {
+    width: 120px; height: 120px;
+}
+.new .new_left .play svg {
+    /* 부모 넓이를 맞춰 따라감 */
+    width: 100%;
+}
+.new .new_right {}
 
 
 
@@ -323,16 +481,99 @@
     .header h1 {float: none; text-align: center;}
     .header h1 strong {left: 0px;}
     #mNav {display: block;}
+    #banner {margin-top: 46px;}
     .banner_menu {top: 20px;}
     .banner_menu .bm_left {display: none;}
     .banner_menu .bm_right ul:first-child {display: none;}
-    .slider {margin-top: 45px;}
+    /* 〰미디어쿼리 수정 */
+    /* .slider {margin-top: 45px;} */
+    .movie .movie_title ul {width: auto;}
+    .movie .movie_title ul li {width: 25%;}
+    /* 〰미디어쿼리 추가 */
+    .event {padding: 50px 0;}
+    .openning {padding: 50px 0;}
+    .openning .open_box {display: none;}
+    .openning .desc {
+        font-size: 24px; 
+        background: none;
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width:768px){
     body {background-color: #d9d7e0;}
     .slider .swiper-slide {padding-bottom: 56.25%;} 
     /* 유튜브 16:9비율에 맞춰서 나온 값이 56.25% */
+    /* 〰미디어쿼리 수정 */
+    #movie {background-color: transparent;}
+    #movie .row {padding: 24px; background-color: #fff;}
+    #movie .row h2 {
+        position: static; /* static - 포지션 기본값 */
+        width: auto;
+        text-indent: 0px;
+        line-height: normal;
+        font-size: 24px; font-weight: 700;
+        padding-bottom: 54px;
+    }
+    .movie {padding: 0;}
+    .movie .movie_title {margin-bottom: 30px;}
+    .movie .movie_title ul {
+        position: relative;
+        padding-bottom: 10px; /* 가상선택자 라인 아래로 내리기 */
+    }
+    .movie .movie_title ul::before {
+        content: '';
+        position: absolute;
+        left: 0; bottom: 0; right: 0;
+        height: 2px;
+        background-color: #e1e1e1;
+    }
+    .movie .movie_title ul li {
+        width: auto;
+        border: 0;
+        margin-right: 35px;
+    }
+    .movie .movie_title ul li.active a {
+        background: none;
+        color: #666;
+    }
+    .movie .movie_title ul li.bar {
+        display: block;
+        position: absolute;
+        bottom: 0; left: 0;
+        width: 75px;
+        height: 2px; 
+        background-color: #999;
+        opacity: 0; transition: 0.3s;
+    }
+    .movie .movie_title ul li:nth-child(1).active ~ li.bar {
+        /* ~ 은 내동생들 */
+        left: 0; opacity: 1;
+    }
+    .movie .movie_title ul li:nth-child(2).active ~ li.bar {
+        left: 108px; opacity: 1;
+    }
+    .movie .movie_title ul li:nth-child(3).active ~ li.bar {
+        left: 216px; opacity: 1;
+    }
+    .movie .movie_title ul li:nth-child(4).active ~ li.bar {
+        left: 317px; opacity: 1;
+    }
+    .movie .movie_title ul li a {
+        font-size: 16px; font-weight: 400;
+        padding: 0;
+    }
+    /* 미디어쿼리 추가수정 */
+    #event .row {padding: 24px;}
+    .event {background-color: #fff; padding: 24px;}
+    #openning {margin: 0;} /* 모르는 공간(event 밑 공간)이 잡혀있는 경우 아래 태그에 적용한 값도 확인하여 처리하기! */
+    .openning .desc {font-size: 20px;}
+    .event .event_right {display: none;}
+    .event .event_left {
+        width: auto; /* auto -> 원래 사이즈로 맞출 때 */
+        float: none;
+        margin-right: 0;
+    }
 }
 
 @media (max-width:600px){
@@ -354,6 +595,61 @@
         padding: 4px 0;
         font-size: 14px;
     }
+
+    #banner .slider .swiper-button-prev::after,
+    #banner .slider .swiper-button-next::after {
+        font-size: 6vw;
+    }
+
+    #movie .container {position: relative;}
+    #movie .container::after {
+        /* 오른쪽 회색 넣어주기 - 눈속임 */
+        content: '';
+        position: absolute;
+        right: 0; top: 0;
+        width: 8px; height: 100%;
+        background-color: #d9d7e0;
+    }
+    #movie .row {
+        margin: 8px; padding: 16px;
+        margin-right: 0; padding-right: 0; /* 눈속임으로 옆슬라이드 부분 사진 보이도록! */
+    }
+    #movie .row::after {
+        content: '';
+        position: absolute;
+        top: 0; right: 0;
+        width: 24px; height: 100%;
+        background-color: #fff;
+    }
+    .movie .movie_title ul li {margin-right: 5px;}
+    #movie .movie_title ul li a {font-size: 14px;}
+    .movie .movie_title ul li.bar {width: 66px;}
+    .movie .movie_title ul li:nth-child(1).active ~ li.bar {
+        left: 0; /* <-위치값 */ opacity: 1; }
+    .movie .movie_title ul li:nth-child(2).active ~ li.bar {
+        left: 69px; opacity: 1;}
+    .movie .movie_title ul li:nth-child(3).active ~ li.bar {
+        left: 140px; opacity: 1;}
+    .movie .movie_title ul li:nth-child(4).active ~ li.bar {
+        left: 202px; opacity: 1;}
+    .movie .movie_title ul li a {
+        font-size: 16px; font-weight: 400;
+        padding: 0;
+    }
+    /* 미디어쿼리 추가수정 */
+    #event .row {padding: 8px;}
+    .event {padding: 16px;}
+    .event h2 {font-size: 18px; margin-bottom: 11px;}
+    #openning {margin: 8px;}
+    .openning {padding: 20px 0;}
+    .openning .date {display: none;}
+    .openning .grand {
+        /* ❗백그라운드 이미지로 넣었던 사진 사이즈 줄이기 */
+        width: 130px; height: 21px;
+        background-size: 198px; /* 개발자모드에서 줄여서 가져옴 */
+        background-position: 0px -67px; /* 개발자모드에서 줄여서 */
+    }
+    .openning .desc {font-size: 16px;}
 }
 @media (max-width:480px){}
 @media (max-width:320px){}
