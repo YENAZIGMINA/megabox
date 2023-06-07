@@ -26,6 +26,7 @@
     background: url(../img/bg01.jpg) no-repeat center top;
     background-size: cover;
 }
+#new {} 
 
 
 /* 💙가운데 영역 */
@@ -439,22 +440,79 @@
 
 /* new */
 .new {
+    position: relative;
     padding: 100px 0;
 }
-.new h2 {}
+.new h2 {
+    font-size: 30px;
+    font-weight: 500;
+    flex-basis: 20px;
+}
 .new .new_left {
+    position: relative;
     height: 500px;
     background: url(../img/new01.jpg) no-repeat center;
     background-size: cover;
+    margin-right: 423px;
 }
 .new .new_left .play {
     width: 120px; height: 120px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
 }
 .new .new_left .play svg {
     /* 부모 넓이를 맞춰 따라감 */
     width: 100%;
 }
-.new .new_right {}
+.new .new_right {
+    position: absolute;
+    top: 146px; right: 0;
+    width: 400px; height: 500px;
+    background-color: #f0f0f0;
+    padding: 34px;
+    box-sizing: border-box;
+}
+.new .new_right .title {
+    font-size: 28px;
+    color: #000;
+}
+
+.new .new_right .release {
+    font-size: 15px;
+    color: #333;
+}
+
+.new .new_right .star {
+    padding: 13px 0;
+}
+.new .new_right .star strong {
+    font-size: 18px; padding-left: 5px;
+}
+.new .new_right .star .icon {
+    width: 18px; height: 18px;
+    display: inline-block;
+    vertical-align: -2px;
+}
+.new .new_right .star .icon.star1 {
+    background-position: -395px 0;
+}
+.new .new_right .star .icon.star2 {
+    background-position: -413px 0;
+}
+.new .new_right .star .icon.star0 {
+    background-position: -375px 0;
+}
+
+.new .new_right .summary {padding-bottom: 3px;}
+.new .new_right .summary li {}
+.new .new_right .summary .gener {}
+.new .new_right .summary .age {padding-bottom: 10px;}
+.new .new_right .summary .desc {
+    height: 100px;
+    overflow: hidden;
+}
+.new .new_right .summary li span {}
 
 
 
