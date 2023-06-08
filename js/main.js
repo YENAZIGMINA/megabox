@@ -57,7 +57,7 @@ const swiper = new Swiper('.slider', {
   movCont.hide().eq(0).show(); //스와이퍼 첫번째 슬라이드만 보이기
   movBtn.click(function(e){
     e.preventDefault();
-    let target = $(this)
+    let target = $(this);
     let index = target.index(); //클릭한 li의 index 번호추출
     console.log(index)
     movCont.hide().eq(index).show(); //모두 지우고, 인덱스 번호와 동등한 div 보임
@@ -65,3 +65,25 @@ const swiper = new Swiper('.slider', {
     target.addClass("active"); //클릭한 li에 active 추가
 
   });
+
+
+  // 공지사항 notice
+  let tabmenu = $('.notice');
+
+  tabmenu.find('ul>li>ul').hide(); // .find() --> 띄워쓰기
+  tabmenu.find('ul>li.active>ul').show();
+
+  tabmenu.find('ul>li>a').click(function(e){
+    e.preventDefault();
+    let target = $(this);
+    //.next() --> 나의 바로 아래동생
+    //.nextAll() --> 나의 아래동생들
+    tabmenu.find('ul>li>a').next().hide();
+    target.next().show();
+
+    tabmenu.find('ul>li').removeClass('active')
+    target.parent().addClass('active'); // a태그의 부모에게 클래스 active를 넣어라
+    //.parent() --> 상위요소
+    //.parents() --> 상위요소들
+
+  })
