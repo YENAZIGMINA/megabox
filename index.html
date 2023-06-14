@@ -911,8 +911,10 @@
                 <div class="new">
                     <h2>새로운 영화</h2>
                     <div class="new_left">
-                        <div class="play">
-                            <!-- 일러스트에서 재생버튼 svg확장자로 저장후 페이지 소스 복붙 -->
+                        <div class="play" data-youtube="p60fP6Ln3eM" id="showTrailer">
+                            <!-- ✔data- : 속성만들기/ ""안에는 유튜브 공유하기에서 /뒤 주소 -->
+
+                            <!-- ✔일러스트에서 재생버튼 svg확장자로 저장후 페이지 소스 복붙 -->
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1417.32 1417.32"
                                 style="enable-background:new 0 0 1417.32 1417.32;" xml:space="preserve">
@@ -1026,7 +1028,7 @@
         <div class="container">
             <div class="row">
                 <!--❗반응형에서 패딩역할을 하는 감싸는 row 필요 -->
-                <div class="help">
+                <div class="help clearfix">
                     <article class="help_box1">
                         <h3>공지사항</h3>
                         <div class="notice">
@@ -1494,6 +1496,74 @@
         </div> <!-- /container -->
     </section> <!-- #help end -->
 
+    <footer id="footer">
+        <div class="footer_sns">
+            <div class="container">
+                <ul>
+                    <li class="icon s1">
+                        <a href="#"><span class="ir">트위터</span></a>
+                    </li>
+                    <li class="icon s2">
+                        <a href="#"><span class="ir">페이스북</span></a>
+                    </li>
+                    <li class="icon s3">
+                        <a href="#"><span class="ir">인스타그램</span></a>
+                    </li>
+                    <li class="icon s4">
+                        <a href="#"><span class="ir">구글플레이</span></a>
+                    </li>
+                    <li class="icon s5">
+                        <a href="#"><span class="ir">아이폰앱스토어</span></a>
+                    </li>
+                </ul>
+                <div class="tel">
+                    <a href="#">ARS <em>154-0070</em></a>
+                </div> <!-- /tel -->
+            </div> <!-- /container -->
+        </div> <!-- /footer_sns -->
+        <div id="footer_infor">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_infor">
+                        <h2><img src="img/logo_footer.png" alt="megabox"></h2>
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">제휴/광고/부대사업 문의</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                        </ul>
+                        <address>
+                            <p>
+                            서울특별시 강남구 도산대로 156, 2창 메가박스중앙(주)(논현동, 중앙엠엔비사옥)<br>
+                            <span>대표자명 김진선</span>
+                            개인정보보호 책임자 경영지원시 실장 박영진 <br>
+                            <span>사업자등록번호 211-86-59478</span>통신판매신고번호 제 833호
+                            </p>
+                            <p>Copyright 2014 by MegaboxJoongAng Inc.All right Reserved</p>
+                        </address>
+                    </div> <!-- /footer_infor -->
+                </div> <!-- /row -->
+            </div> <!-- /container -->
+        </div> <!-- /#footer_infor -->
+    </footer> <!-- /#footer -->
+    
+    
+
+
+    <!-- 트레일러 -->
+    <div class="overlay" id="blackout">
+        <div class="trailModal modal">
+            <div id="trailer">
+                <!-- 유튜브 플레이어를 대체하는 공간 -->
+
+            </div>  <!-- /trailer -->
+        </div> <!-- /trailModal -->
+        <button id="hideTrailer" class="modal_close">닫기</button>
+    </div> <!-- /.overlay, #blackout -->
+
 
 
 
@@ -1505,6 +1575,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/movie.js"></script>
 </body>
 
 </html>
